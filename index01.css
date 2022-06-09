@@ -1,0 +1,1034 @@
+                        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+                        
+                        html,
+                        body,
+                        div,
+                        span,
+                        applet,
+                        object,
+                        iframe,
+                        h1,
+                        h2,
+                        h3,
+                        h4,
+                        h5,
+                        h6,
+                        p,
+                        blockquote,
+                        pre,
+                        a,
+                        abbr,
+                        acronym,
+                        address,
+                        big,
+                        cite,
+                        code,
+                        del,
+                        dfn,
+                        em,
+                        img,
+                        ins,
+                        kbd,
+                        q,
+                        s,
+                        samp,
+                        small,
+                        strike,
+                        strong,
+                        sub,
+                        sup,
+                        tt,
+                        var,
+                        b,
+                        u,
+                        i,
+                        center,
+                        dl,
+                        dt,
+                        dd,
+                        ol,
+                        ul,
+                        li,
+                        fieldset,
+                        form,
+                        label,
+                        legend,
+                        table,
+                        caption,
+                        tbody,
+                        tfoot,
+                        thead,
+                        tr,
+                        th,
+                        td,
+                        article,
+                        aside,
+                        canvas,
+                        details,
+                        embed,
+                        figure,
+                        figcaption,
+                        footer,
+                        header,
+                        hgroup,
+                        menu,
+                        nav,
+                        output,
+                        ruby,
+                        section,
+                        summary,
+                        time,
+                        mark,
+                        audio,
+                        video {
+                            margin: 0;
+                            padding: 0;
+                            border: 0;
+                            font-size: 100%;
+                            font: inherit;
+                            vertical-align: baseline;
+                        }
+                        /* HTML5 display-role reset for older browsers */
+                        
+                        article,
+                        aside,
+                        details,
+                        figcaption,
+                        figure,
+                        footer,
+                        header,
+                        hgroup,
+                        menu,
+                        nav,
+                        section {
+                            display: block;
+                        }
+                        
+                        body {
+                            line-height: 1;
+                        }
+                        
+                        ol,
+                        ul {
+                            list-style: none;
+                        }
+                        
+                        blockquote,
+                        q {
+                            quotes: none;
+                        }
+                        
+                        blockquote:before,
+                        blockquote:after,
+                        q:before,
+                        q:after {
+                            content: '';
+                            content: none;
+                        }
+                        
+                        table {
+                            border-collapse: collapse;
+                            border-spacing: 0;
+                        }
+                        
+                        *,
+                        *::after,
+                        *::before {
+                            box-sizing: border-box;
+                            outline: 1px solid black;
+                            margin-block-start: 0;
+                            margin-block-end: 0;
+                        }
+                        
+                        body {
+                            font-family: 'NotoSans TC', sans-serif;
+                            line-height: 1.5;
+                        }
+                        
+                        a {
+                            text-decoration: none;
+                        }
+                        
+                        ul,
+                        li {
+                            list-style: none;
+                        }
+                        
+                        img {
+                            width: 100%;
+                        }
+                        /* index.css */
+                        
+                        .wrap {
+                            width: 100%;
+                            position: relative;
+                            /* background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg");
+    background-position: top right;
+    background-size: 650px;
+    background-repeat: no-repeat; */
+                        }
+                        /* backgroundImg */
+                        
+                        .bg1 {
+                            width: 60%;
+                            position: absolute;
+                            top: 0px;
+                            right: 0px;
+                            z-index: -2;
+                            display: block;
+                        }
+                        
+                        .bg2 {
+                            width: 35%;
+                            position: absolute;
+                            top: 80px;
+                            right: 25vh;
+                            z-index: 0;
+                        }
+                        
+                        .bg3 {
+                            width: 100%;
+                            margin-left: -30px;
+                            margin-bottom: 50px;
+                            display: none;
+                        }
+                        
+                        .top {
+                            width: 50px;
+                            height: 50px;
+                            text-align: center;
+                            line-height: 50px;
+                            letter-spacing: 1px;
+                            color: #fff;
+                            font-weight: 700;
+                            background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg");
+                            background-size: 100%;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            position: absolute;
+                            top: 520px;
+                            right: 20px;
+                        }
+                        
+                        .header {
+                            /* background-color: pink; */
+                            width: 100%;
+                            height: 100vh;
+                        }
+                        
+                        .headerTop {
+                            display: flex;
+                            justify-content: space-between;
+                            /* background-color: skyblue; */
+                            padding: 30px;
+                            padding-left: 60px;
+                        }
+                        
+                        .logo {
+                            width: 173px;
+                            height: 40px;
+                            display: inline-block;
+                            margin-top: 15px;
+                        }
+                        
+                        .logoA {
+                            display: inline-block;
+                        }
+                        
+                        .headerButton {
+                            width: 128px;
+                            height: 40px;
+                            margin-right: 50px;
+                            margin-top: 10px;
+                            display: inline-block;
+                            color: #fff;
+                            background-color: #FF5D50;
+                            border-radius: 25px;
+                            text-align: center;
+                            font: normal normal normal 16px/40px Noto Sans TC;
+                        }
+                        
+                        .headerContent {
+                            width: 100%;
+                            margin-top: 120px;
+                            padding-left: 60px;
+                        }
+                        
+                        .h2_1 {
+                            text-align: left;
+                            font: normal normal bold 18px/18px Noto Sans TC;
+                            color: #56C4C5;
+                            margin-bottom: 15px;
+                        }
+                        
+                        .h2_2 {
+                            font: normal normal bold 48px/63px Noto Sans TC;
+                            color: #221E1F;
+                        }
+                        
+                        .h2_3 {
+                            font: normal normal normal 20px/20px Noto Sans TC;
+                            color: #221E1F;
+                            margin-top: 15px;
+                        }
+                        /* container */
+                        
+                        .container_1 {
+                            max-width: 1088px;
+                            margin: 0 auto;
+                            text-align: center;
+                        }
+                        
+                        .container_1 h2 {
+                            font: normal normal bold 32px/46px Noto Sans TC;
+                            color: #221E1F;
+                        }
+                        
+                        .card_1 {
+                            display: flex;
+                            flex-wrap: wrap;
+                            padding: 5%;
+                        }
+                        
+                        .card_item_1 {
+                            width: 25%;
+                            margin: 0 auto;
+                            padding-bottom: 50px;
+                        }
+                        
+                        .card_item_1 img {
+                            width: 35%;
+                            padding-bottom: 20px;
+                        }
+                        
+                        .card_item_1 h2 {
+                            font: normal normal bold 24px/35px Noto Sans TC;
+                            letter-spacing: 0px;
+                            color: #221E1F;
+                            padding-bottom: 10px;
+                        }
+                        
+                        .card_item_1 p {
+                            font: normal normal normal 16px/24px Noto Sans TC;
+                            letter-spacing: 0px;
+                            color: #747474;
+                            padding-bottom: 10px;
+                        }
+                        /* div2 */
+                        /* .container_2 {
+                            max-width: 1088px;
+                            margin: 0 auto;
+                            text-align: center;
+                            padding-left: 15px;
+                        }
+                        
+                        .container_2 h2 {
+                            font: normal normal bold 32px/46px Noto Sans TC;
+                            color: #221E1F;
+                            margin-bottom: 20px;
+                        }
+                        
+                        .card_2 {
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 95%;
+                            margin: 0 auto;
+                            padding-right: -15px;
+                        }
+                        
+                        .card_item_2 {
+                            width: 23%;
+                            margin-right: 10px;
+                            border-radius: 10px;
+                            box-shadow: 1px 2px 9px 2px #bbb8b8;
+                        }
+                        
+                        .card_item_2 img {
+                            width: 100%;
+                            height: auto;
+                        }
+                        
+                        .card_item_2 h3 {
+                            padding: 16px;
+                            text-align: center;
+                            font: normal normal bold 16px/24px Noto Sans TC;
+                            color: #56C4C5;
+                        }
+                        
+                        .card_item_2 p {
+                            font: normal normal normal 16px/24px Noto Sans TC;
+                            color: #221E1F;
+                        } */
+                        
+                        .container_2 {
+                            max-width: 1200px;
+                            width: 100%;
+                            text-align: center;
+                        }
+                        
+                        .container_2 h2 {
+                            margin-bottom: 16px;
+                            font: normal normal bold 32px/46px Noto Sans TC;
+                            letter-spacing: 0px;
+                            color: #221E1F;
+                            opacity: 1;
+                        }
+                        
+                        .container_2 p {
+                            font: normal normal normal 20px/29px Noto Sans TC;
+                            letter-spacing: 0px;
+                            color: #221E1F;
+                            opacity: 1;
+                        }
+                        
+                        .card_2 {
+                            display: flex;
+                            gap: 16px;
+                            margin: 48px 135px 100px;
+                        }
+                        
+                        .card_item_2 {
+                            width: 33%;
+                        }
+                        
+                        .card_item_2 img {
+                            max-width: 100%;
+                        }
+                        
+                        .card_item_2 h2 {
+                            margin: 16px auto;
+                            font: normal normal bold 16px/24px Noto Sans TC;
+                            letter-spacing: 0px;
+                            color: #56C4C5;
+                            opacity: 1;
+                        }
+                        
+                        .card_item_2 p {
+                            padding: 16px;
+                            margin: 16px auto 24px;
+                            font: normal normal normal 16px/24px Noto Sans TC;
+                            letter-spacing: 0px;
+                            color: #221E1F;
+                            opacity: 1;
+                        }
+                        
+                        .container_3 {
+                            max-width: 1088px;
+                            margin: 0 auto;
+                            text-align: center;
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin-top: 50px;
+                        }
+                        
+                        .lc {
+                            width: 50%;
+                            text-align: left;
+                        }
+                        
+                        .card_3 {
+                            display: flex;
+                            flex-wrap: wrap;
+                            padding: 20px;
+                            margin: 0 auto;
+                        }
+                        
+                        .card_item_3 {
+                            width: 45%;
+                            padding: 15px;
+                            padding-right: 15px;
+                            border-radius: 10px;
+                            box-shadow: 1px 2px 9px 2px #bbb8b8;
+                            margin-right: 15px;
+                            margin-bottom: 15px;
+                        }
+                        
+                        .card_item_3 .item_img img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        
+                        .item_img {
+                            text-align: center;
+                            padding: 10px;
+                            margin-right: 80px;
+                            margin-bottom: 15px;
+                            border-radius: 60%;
+                            box-shadow: 1px 2px 9px 2px #bbb8b8;
+                        }
+                        
+                        .card_item_3 h2 {
+                            font: normal normal bold 18px/26px Noto Sans TC;
+                            color: #221E1F;
+                            margin-bottom: 15px;
+                        }
+                        
+                        .card_item_3 p {
+                            font: normal normal normal 16px/24px Noto Sans TC;
+                            color: #221E1F;
+                            margin-bottom: 30px;
+                        }
+                        
+                        .rc {
+                            width: 50%;
+                            text-align: left;
+                            padding-left: 50px;
+                            padding-top: 120px;
+                        }
+                        
+                        .card_3 {
+                            display: flex;
+                            flex-wrap: wrap;
+                            padding-left: 50px;
+                            margin: 0 auto;
+                        }
+                        
+                        .rc h2 {
+                            font: normal normal bold 32px/46px Noto Sans TC;
+                            color: #221E1F;
+                            margin-bottom: 25px;
+                        }
+                        
+                        .rc p {
+                            width: 100%;
+                            font: normal normal normal 18px/26px Noto Sans TC;
+                            color: #221E1F;
+                            margin-bottom: 25px;
+                        }
+                        
+                        .rc a {
+                            width: 136px;
+                            height: 49px;
+                            padding: 5px;
+                            display: block;
+                            text-align: center;
+                            border-radius: 25px;
+                            font: normal normal normal 18px/39px Comfortaa;
+                            color: #FFFFFF;
+                            background-color: #56C4C5;
+                            margin-left: 5px;
+                        }
+                        /* div4 */
+                        
+                        .container_4 {
+                            max-width: 1088px;
+                            margin: 0 auto;
+                            text-align: center;
+                            padding-left: 15px;
+                            margin-bottom: 50px;
+                        }
+                        
+                        .container_4 h2 {
+                            text-align: center;
+                            font: normal normal bold 32px/46px Noto Sans TC;
+                            letter-spacing: 0px;
+                            color: #221E1F;
+                            opacity: 1;
+                            margin: 50px 0;
+                        }
+                        
+                        .card_4 {
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 80%;
+                            margin: 0 auto;
+                        }
+                        
+                        .card_item_4 {
+                            width: 29%;
+                            margin-right: 10px;
+                            border-radius: 10px;
+                            box-shadow: 1px 2px 9px 2px #bbb8b8;
+                            text-align: left;
+                            margin-left: 20px;
+                            padding: 15px;
+                            position: relative;
+                            margin-top: 50px;
+                        }
+                        
+                        .card_item_4>img {
+                            width: 30%;
+                            height: auto;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: -25px;
+                        }
+                        
+                        .card_item_4 p {
+                            text-align: left;
+                            font: normal normal normal 16px/24px Noto Sans TC;
+                            letter-spacing: 0px;
+                            color: #221E1F;
+                            opacity: 1;
+                            margin: 50px 0;
+                        }
+                        
+                        .card_item_4 .mb70 {
+                            margin-bottom: 70px;
+                        }
+                        
+                        .card_item_4 h3 {
+                            text-align: left;
+                            font: normal normal bold 16px/24px Noto Sans TC;
+                            letter-spacing: 0px;
+                            color: #221E1F;
+                            opacity: 1;
+                            margin-bottom: 25px;
+                        }
+                        
+                        .divT {
+                            display: flex;
+                        }
+                        
+                        .divL {
+                            width: 50%;
+                            padding-left: 15px;
+                            text-align: left;
+                            font: normal normal normal 16px/24px Noto Sans TC;
+                            letter-spacing: 0px;
+                            color: #221E1F;
+                            opacity: 1;
+                        }
+                        
+                        .divR {
+                            text-align: right;
+                            width: 50%;
+                        }
+                        
+                        .divR img {
+                            width: 15%;
+                            vertical-align: sub;
+                        }
+                        
+                        .list {
+                            display: flex;
+                            width: 150px;
+                            margin: 10px auto;
+                        }
+                        
+                        .lists {
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 10px;
+                            margin: 10px;
+                            background-color: rgb(199, 193, 193);
+                        }
+                        
+                        .current {
+                            width: 20px;
+                            height: 10px;
+                            background-color: rgb(232, 201, 98);
+                        }
+                        /* div5 */
+                        
+                        .container_5 {
+                            background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg");
+                            background-size: 100%;
+                            background-repeat: no-repeat;
+                            text-align: center;
+                            padding-top: 250px;
+                        }
+                        
+                        .container_5 h3 {
+                            text-align: center;
+                            font: normal normal bold 32px/46px Noto Sans TC;
+                            letter-spacing: 0px;
+                            color: #221E1F;
+                            opacity: 1;
+                            margin: 0 30%;
+                            margin-bottom: 10%;
+                        }
+                        
+                        .container_5 a {
+                            display: block;
+                            width: 150px;
+                            margin: 0 auto;
+                            background: #56C4C5 0% 0% no-repeat padding-box;
+                            border: 1px solid #56C4C5;
+                            border-radius: 27px;
+                            text-align: center;
+                            letter-spacing: 0px;
+                            color: #FFFFFF;
+                            opacity: 1;
+                            padding: 15px 20px;
+                            margin-bottom: 200px;
+                        }
+                        
+                        .container_5 p {
+                            text-align: center;
+                            font: normal normal normal 16px/24px Noto Sans TC;
+                            letter-spacing: 0px;
+                            color: #221E1F;
+                            opacity: 1;
+                            padding: 2%;
+                        }
+                        
+                        @media (max-width: 908px) {
+                            .card_4 {
+                                display: flex;
+                                flex-wrap: wrap;
+                                margin: 0 auto;
+                            }
+                            .card_item_4 {
+                                width: 60%;
+                                padding-bottom: 50px;
+                                margin: 25px auto;
+                                margin-bottom: 55px;
+                            }
+                            .card_4 p {
+                                margin-top: 150px;
+                            }
+                        }
+                        
+                        @media (max-width: 768px) {
+                            .bg1 {
+                                display: block;
+                            }
+                            .bg2 {
+                                width: 30%;
+                                position: absolute;
+                                top: 80px;
+                                right: 10vh;
+                                z-index: 1;
+                            }
+                            .bg3 {
+                                margin-top: 30px;
+                            }
+                            .headerContent {
+                                width: 100%;
+                                margin-top: 100px;
+                                padding-left: 10px;
+                            }
+                            .h2_1 {
+                                text-align: left;
+                                font: normal normal bold 13px/21px Noto Sans TC;
+                                color: #56C4C5;
+                                margin-bottom: 15px;
+                            }
+                            .h2_2 {
+                                font: normal normal bold 29px/43px Noto Sans TC;
+                                color: #221E1F;
+                            }
+                            .h2_3 {
+                                font: normal normal normal 13px/21px Noto Sans TC;
+                                color: #221E1F;
+                                margin-top: 15px;
+                            }
+                            .container_1 {
+                                padding-top: 60px;
+                            }
+                            .header {
+                                height: auto;
+                            }
+                            .h2_1 {
+                                width: 100%;
+                                padding: 5px;
+                                margin: 5px;
+                            }
+                            .h2_2 {
+                                width: 100%;
+                                padding: 5px;
+                                margin: 5px;
+                            }
+                            .h2_3 {
+                                width: 100%;
+                                padding: 5px;
+                                margin: 5px;
+                            }
+                            .card_item_1 {
+                                width: 60%;
+                                margin: 10px auto;
+                                padding-bottom: 50px;
+                            }
+                            .card_2 {
+                                display: flex;
+                                flex-wrap: wrap;
+                                padding-left: 55px;
+                                margin: 0 auto;
+                            }
+                            .card_item_2 {
+                                width: 45%;
+                                margin-bottom: 15px;
+                            }
+                            /* div3 */
+                            .lc {
+                                width: 100%;
+                                text-align: left;
+                                -webkit-box-ordinal-group: 2;
+                                -moz-box-ordinal-group: 2;
+                                -ms-flex-order: 2;
+                                -webkit-order: 2;
+                                order: 2;
+                            }
+                            .card_3 {
+                                display: flex;
+                                flex-wrap: wrap;
+                                padding: 2%;
+                                margin: 0 auto;
+                            }
+                            .card_item_3 {
+                                width: 45%;
+                                padding: 5%;
+                                padding-right: 5%;
+                                border-radius: 10px;
+                                box-shadow: 1px 2px 9px 2px #bbb8b8;
+                                margin-right: 5%;
+                                margin-bottom: 15px;
+                            }
+                            .card_item_3 .item_img img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .item_img {
+                                text-align: center;
+                                padding: 5px;
+                                margin-right: 80px;
+                                margin-bottom: 15px;
+                                border-radius: 43px;
+                                box-shadow: 1px 2px 9px 2px #bbb8b8;
+                            }
+                            .card_item_3 h2 {
+                                font: normal normal bold 18px/26px Noto Sans TC;
+                                color: #221E1F;
+                                margin-bottom: 15px;
+                            }
+                            .card_item_3 p {
+                                font: normal normal normal 16px/24px Noto Sans TC;
+                                color: #221E1F;
+                                margin-bottom: 30px;
+                            }
+                            .rc {
+                                width: 100%;
+                                text-align: center;
+                                padding-right: 60px;
+                                padding-top: 120px;
+                                -webkit-box-ordinal-group: 1;
+                                -moz-box-ordinal-group: 1;
+                                -ms-flex-order: 1;
+                                -webkit-order: 1;
+                                order: 1;
+                                margin-bottom: 50px;
+                            }
+                            .card_3 {
+                                display: flex;
+                                flex-wrap: wrap;
+                                padding-left: 50px;
+                                margin: 0 auto;
+                            }
+                            .rc h2 {
+                                font: normal normal bold 20px/46px Noto Sans TC;
+                                color: #221E1F;
+                                margin-bottom: 25px;
+                            }
+                            .rc p {
+                                width: 100%;
+                                font: normal normal normal 10px/26px Noto Sans TC;
+                                color: #221E1F;
+                                margin-bottom: 25px;
+                            }
+                            .rc a {
+                                width: 136px;
+                                height: 49px;
+                                padding: 5px;
+                                margin-left: 35%;
+                                display: block;
+                                text-align: center;
+                                border-radius: 25px;
+                                font: normal normal normal 18px/39px Comfortaa;
+                                color: #FFFFFF;
+                                background-color: #56C4C5;
+                                margin: 15px auto;
+                            }
+                            /* div4 */
+                            .card_4 {
+                                display: flex;
+                                flex-wrap: wrap;
+                                margin: 0 auto;
+                            }
+                            .card_item_4 {
+                                width: 100%;
+                                margin-bottom: 25px;
+                                margin: 25px auto;
+                            }
+                            .container_5 h3 {
+                                text-align: center;
+                                font: normal normal bold 24px/35px Noto Sans TC;
+                                letter-spacing: 0px;
+                                color: #221E1F;
+                                opacity: 1;
+                                margin: 0;
+                                margin-bottom: 10%;
+                            }
+                            .container_5 a {
+                                margin-bottom: 100px;
+                            }
+                        }
+                        
+                        @media (max-width: 375px) {
+                            .wrap {
+                                background: none;
+                            }
+                            .bg1 {
+                                display: none;
+                            }
+                            .bg2 {
+                                width: 70%;
+                                position: absolute;
+                                top: 300px;
+                                right: 25vh;
+                                z-index: 1;
+                            }
+                            .bg3 {
+                                width: 80%;
+                                display: block;
+                                z-index: -1;
+                                margin-left: 10px;
+                                margin-top: 130px;
+                            }
+                            .headerTop {
+                                display: flex;
+                                justify-content: space-between;
+                                padding: 22px;
+                                padding-left: 20px;
+                                border-bottom: 2px solid rgb(209, 161, 28);
+                            }
+                            .logo {
+                                /* width: 173px; */
+                                height: 24px;
+                                display: inline-block;
+                                margin-top: 15px;
+                            }
+                            .logoA {
+                                display: inline-block;
+                            }
+                            .headerButton {
+                                width: 128px;
+                                height: 40px;
+                                margin-right: 0px;
+                                margin-top: 10px;
+                                display: inline-block;
+                                color: #fff;
+                                background-color: #FF5D50;
+                                border-radius: 20px;
+                                text-align: center;
+                                font: normal normal normal 16px/40px Noto Sans TC;
+                            }
+                            .headerContent {
+                                width: 100%;
+                                margin-top: 10px;
+                                padding-left: 20px;
+                            }
+                            .h2_1 {
+                                text-align: left;
+                                font: normal normal bold 16px/24px Noto Sans TC;
+                                color: #56C4C5;
+                                margin-bottom: 15px;
+                            }
+                            .h2_2 {
+                                font: normal normal bold 32px/46px Noto Sans TC;
+                                color: #221E1F;
+                            }
+                            .h2_3 {
+                                font: normal normal normal 16px/24px Noto Sans TC;
+                                color: #221E1F;
+                                margin-top: 15px;
+                            }
+                            .header {
+                                height: auto;
+                            }
+                            .h2_1 {
+                                width: 100%;
+                                padding: 5px;
+                                margin: 5px;
+                            }
+                            .h2_2 {
+                                width: 100%;
+                                padding: 5px;
+                                margin: 5px;
+                            }
+                            .h2_3 {
+                                width: 100%;
+                                padding: 5px;
+                                margin: 5px;
+                            }
+                            .card_item_1 {
+                                width: 100%;
+                                margin: 30px;
+                                padding: 0px;
+                            }
+                            .card_2 {
+                                padding: 20px;
+                            }
+                            .card_item_2 {
+                                width: 100%;
+                            }
+                            .rc a {
+                                margin: 15px auto;
+                            }
+                            .card_3 {
+                                padding: 25px;
+                            }
+                            .card_item_3 {
+                                width: 100%;
+                                border-radius: 10px;
+                                box-shadow: 1px 2px 9px 2px #bbb8b8;
+                                margin-bottom: 15px;
+                                margin-right: 15px;
+                                margin-left: 15px;
+                            }
+                            .card_item_3 h2 {
+                                margin-bottom: 30px;
+                            }
+                            .card_item_3 p {
+                                margin-bottom: 60px;
+                            }
+                            .item_img {
+                                width: 86px;
+                                text-align: center;
+                                padding: 15px;
+                                margin: 25px 80px 30px 0;
+                                border-radius: 80px;
+                                box-shadow: 1px 2px 9px 2px #bbb8b8;
+                            }
+                            .rc h2 {
+                                font: normal normal bold 18px/26px Noto Sans TC;
+                                color: #221E1F;
+                                margin-bottom: 25px;
+                            }
+                            .rc p {
+                                width: 100%;
+                                font: normal normal normal 16px/24px Noto Sans TC;
+                                color: #221E1F;
+                                margin-bottom: 25px;
+                            }
+                            /* div4 */
+                            .card_4 {
+                                padding: 20px;
+                            }
+                            .card_item_4 {
+                                width: 100%;
+                            }
+                            .container_5 {
+                                width: 100%;
+                                background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg");
+                                background-size: 100%;
+                                background-repeat: no-repeat;
+                                text-align: center;
+                                padding-top: 250px;
+                            }
+                            .container_5 h3 {
+                                text-align: center;
+                                font: normal normal bold 24px/35px Noto Sans TC;
+                                letter-spacing: 0px;
+                                color: #221E1F;
+                                opacity: 1;
+                                margin: 0;
+                                margin-bottom: 10%;
+                            }
+                            .container_5 a {
+                                margin-bottom: 100px;
+                            }
+                        }
