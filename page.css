@@ -1,730 +1,759 @@
-                            /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-                            
-                            html,
-                            body,
-                            div,
-                            span,
-                            applet,
-                            object,
-                            iframe,
-                            h1,
-                            h2,
-                            h3,
-                            h4,
-                            h5,
-                            h6,
-                            p,
-                            blockquote,
-                            pre,
-                            a,
-                            abbr,
-                            acronym,
-                            address,
-                            big,
-                            cite,
-                            code,
-                            del,
-                            dfn,
-                            em,
-                            img,
-                            ins,
-                            kbd,
-                            q,
-                            s,
-                            samp,
-                            small,
-                            strike,
-                            strong,
-                            sub,
-                            sup,
-                            tt,
-                            var,
-                            b,
-                            u,
-                            i,
-                            center,
-                            dl,
-                            dt,
-                            dd,
-                            ol,
-                            ul,
-                            li,
-                            fieldset,
-                            form,
-                            label,
-                            legend,
-                            table,
-                            caption,
-                            tbody,
-                            tfoot,
-                            thead,
-                            tr,
-                            th,
-                            td,
-                            article,
-                            aside,
-                            canvas,
-                            details,
-                            embed,
-                            figure,
-                            figcaption,
-                            footer,
-                            header,
-                            hgroup,
-                            menu,
-                            nav,
-                            output,
-                            ruby,
-                            section,
-                            summary,
-                            time,
-                            mark,
-                            audio,
-                            video {
-                                margin: 0;
-                                padding: 0;
-                                border: 0;
-                                font-size: 100%;
-                                font: inherit;
-                                vertical-align: baseline;
-                            }
-                            /* HTML5 display-role reset for older browsers */
-                            
-                            article,
-                            aside,
-                            details,
-                            figcaption,
-                            figure,
-                            footer,
-                            header,
-                            hgroup,
-                            menu,
-                            nav,
-                            section {
-                                display: block;
-                            }
-                            
-                            body {
-                                line-height: 1;
-                            }
-                            
-                            ol,
-                            ul {
-                                list-style: none;
-                            }
-                            
-                            blockquote,
-                            q {
-                                quotes: none;
-                            }
-                            
-                            blockquote:before,
-                            blockquote:after,
-                            q:before,
-                            q:after {
-                                content: '';
-                                content: none;
-                            }
-                            
-                            table {
-                                border-collapse: collapse;
-                                border-spacing: 0;
-                            }
-                            
-                            *,
-                            *::after,
-                            *::before {
-                                box-sizing: border-box;
-                                outline: 1px solid black;
-                                margin-block-start: 0;
-                                margin-block-end: 0;
-                            }
-                            
-                            body {
-                                font-family: 'NotoSans TC', sans-serif;
-                                line-height: 1.5;
-                            }
-                            
-                            a {
-                                text-decoration: none;
-                            }
-                            
-                            ul,
-                            li {
-                                list-style: none;
-                            }
-                            
-                            img {
-                                width: 100%;
-                            }
-                            /* index.css */
-                            
-                            .wrap {
-                                width: 100%;
-                                position: relative;
-                                /* background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg");
-background-position: top right;
-background-size: 650px;
-background-repeat: no-repeat; */
-                            }
-                            /* backgroundImg */
-                            
-                            .bg1 {
-                                width: 60%;
-                                position: absolute;
-                                top: 0px;
-                                right: 0px;
-                                z-index: -2;
-                                display: block;
-                            }
-                            
-                            .bg2 {
-                                width: 35%;
-                                position: absolute;
-                                top: 80px;
-                                right: 25vh;
-                                z-index: 0;
-                            }
-                            
-                            .bg3 {
-                                width: 100%;
-                                margin-left: -30px;
-                                margin-bottom: 50px;
-                                display: none;
-                            }
-                            
-                            .header {
-                                /* background-color: pink; */
-                                width: 100%;
-                                height: 100vh;
-                                background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner.svg");
-                                background-repeat: no-repeat;
-                                background-size: cover;
-                            }
-                            
-                            .headerTop {
-                                display: flex;
-                                justify-content: space-between;
-                                /* background-color: skyblue; */
-                                padding: 30px;
-                                padding-left: 60px;
-                            }
-                            
-                            .top {
-                                width: 50px;
-                                height: 50px;
-                                text-align: center;
-                                line-height: 50px;
-                                letter-spacing: 1px;
-                                color: #fff;
-                                font-weight: 700;
-                                background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg");
-                                background-size: 100%;
-                                background-position: center;
-                                background-repeat: no-repeat;
-                                position: absolute;
-                                top: 120vh;
-                                right: 20px;
-                            }
-                            
-                            .logo {
-                                width: 173px;
-                                height: 40px;
-                                display: inline-block;
-                                margin-top: 15px;
-                            }
-                            
-                            .logoA {
-                                display: inline-block;
-                            }
-                            
-                            .headerButton {
-                                width: 128px;
-                                height: 40px;
-                                margin-right: 50px;
-                                margin-top: 10px;
-                                display: inline-block;
-                                color: #fff;
-                                background-color: #FF5D50;
-                                border-radius: 25px;
-                                text-align: center;
-                                font: normal normal normal 16px/40px Noto Sans TC;
-                            }
-                            
-                            .headerContent {
-                                width: 100%;
-                                margin-top: 120px;
-                                padding-left: 60px;
-                            }
-                            
-                            .headerContent h2 {
-                                text-align: left;
-                                font: normal normal bold 48px/70px Noto Sans TC;
-                                letter-spacing: 0px;
-                                color: #221E1F;
-                                opacity: 1;
-                            }
-                            
-                            .headerContent p {
-                                text-align: left;
-                                font: normal normal normal 16px/24px Noto Sans TC;
-                                letter-spacing: 0px;
-                                color: #221E1F;
-                                opacity: 1
-                            }
-                            
-                            .wrap {
-                                max-width: 1200px;
-                                margin: 0 auto;
-                                padding: 5% 10%;
-                            }
-                            
-                            .wrap h2 {
-                                text-align: center;
-                                font: normal normal bold 32px/46px Noto Sans TC;
-                                letter-spacing: 0px;
-                                color: #221E1F;
-                                opacity: 1;
-                            }
-                            
-                            .headerh2 {
-                                text-align: center;
-                                font: normal normal bold 32px/46px Noto Sans TC;
-                                letter-spacing: 0px;
-                                color: #221E1F;
-                                opacity: 1;
-                            }
-                            
-                            .lists {
-                                display: flex;
-                                max-width: 650px;
-                                text-align: center;
-                                margin: 50px auto;
-                            }
-                            
-                            .item {
-                                width: 18%;
-                                background: #FFFFFF 0% 0% no-repeat padding-box;
-                                border: 1px solid #56C4C5;
-                                border-radius: 27px;
-                                opacity: 1;
-                                margin: 15px 10px;
-                                text-align: center;
-                                font: normal normal normal 18px/26px Comfortaa;
-                                letter-spacing: 0px;
-                                color: #56C4C5;
-                                padding: 5px 7px;
-                            }
-                            
-                            .change {
-                                background: #56C4C5 0% 0% no-repeat padding-box;
-                                border: 1px solid #56C4C5;
-                                color: #FFFFFF;
-                                border-radius: 27px;
-                                opacity: 1;
-                            }
-                            
-                            .container {
-                                display: flex;
-                                flex-wrap: wrap;
-                                max-width: 1200px;
-                                width: 100%;
-                                margin: 0 auto;
-                                gap: 25px;
-                            }
-                            
-                            .Citem {
-                                width: 48.11%;
-                                box-shadow: 0px 2px 10px #00000014;
-                            }
-                            
-                            .item2 img {
-                                width: 20px;
-                            }
-                            
-                            .item2 p {
-                                display: inline-block;
-                            }
-                            
-                            .Citem p {
-                                text-align: center;
-                            }
-                            
-                            .Citem h2 {
-                                text-align: center;
-                                font: normal normal bold 24px/35px Noto Sans TC;
-                                letter-spacing: 0px;
-                                color: #221E1F;
-                                opacity: 1;
-                                border: 1px solid #DDDDDD;
-                                padding: 15px 0;
-                            }
-                            
-                            .Citem .mt {
-                                text-align: center;
-                                font: normal normal normal 16px/24px Noto Sans TC;
-                                letter-spacing: 0px;
-                                color: #221E1F;
-                                opacity: 1;
-                                margin-top: 20px;
-                                margin-bottom: 5px;
-                            }
-                            
-                            .Citem .mb {
-                                text-align: center;
-                                font: normal normal normal 16px/24px Noto Sans TC;
-                                letter-spacing: 0px;
-                                color: #221E1F;
-                                opacity: 1;
-                                margin-bottom: 20px;
-                            }
-                            
-                            .divA {
-                                display: flex;
-                                flex-direction: column;
-                                background: #F5F5F5 0% 0% no-repeat padding-box;
-                                border-radius: 12px;
-                                opacity: 1;
-                                width: 43.1%;
-                                margin: 50px 20px;
-                                box-shadow: 0px 2px 10px #00000014;
-                            }
-                            
-                            .box .divA h2 {
-                                width: 100%;
-                                text-align: center;
-                                font: normal normal normal 12px/17px Noto Sans TC;
-                                letter-spacing: 0px;
-                                color: #221E1F;
-                                opacity: 1;
-                                padding-top: 15px;
-                            }
-                            
-                            .box .divA p {
-                                text-align: left;
-                                font: normal normal normal 32px/35px Comfortaa;
-                                letter-spacing: 0px;
-                                color: #56C4C5;
-                                opacity: 1;
-                                text-align: center;
-                                padding-bottom: 15px;
-                            }
-                            
-                            .divA span {
-                                text-align: left;
-                            }
-                            
-                            .icon {
-                                font: normal normal normal 29px/42px Noto Sans TC;
-                                letter-spacing: 0px;
-                                color: #221E1F;
-                                opacity: 1;
-                                margin: auto 10px;
-                            }
-                            
-                            .Citem span {
-                                text-align: left;
-                                font: normal normal normal 29px/42px Noto Sans TC;
-                                letter-spacing: 0px;
-                                color: #221E1F;
-                                opacity: 1;
-                            }
-                            
-                            .divA span {
-                                text-align: center;
-                                font: normal normal bold 12px/17px Noto Sans TC;
-                                letter-spacing: 0px;
-                                color: #56C4C5;
-                                opacity: 1;
-                            }
-                            
-                            .box {
-                                display: flex;
-                                width: 100%;
-                                max-width: 1200px;
-                                margin-bottom: 25px;
-                            }
-                            
-                            .item2 {
-                                margin-bottom: 15px;
-                            }
-                            
-                            .item2 p {
-                                font: normal normal normal 16px/24px Noto Sans TC;
-                                letter-spacing: 0px;
-                                color: #221E1F;
-                                opacity: 1;
-                                margin-left: 15px;
-                            }
-                            
-                            .btn {
-                                display: block;
-                                width: 136px;
-                                padding: 8px 0;
-                                margin: 30px auto;
-                                background: #56C4C5 0% 0% no-repeat padding-box;
-                                border: 1px solid #56C4C5;
-                                border-radius: 27px;
-                                opacity: 1;
-                                text-align: center;
-                                font: normal normal normal 18px/26px Comfortaa;
-                                letter-spacing: 0px;
-                                color: #FFFFFF;
-                            }
-                            
-                            .m-lf20 {
-                                margin: 0 20px;
-                            }
-                            
-                            .Qh2 {
-                                margin: 60px auto 30px;
-                            }
-                            
-                            @media(max-width:955px) {
-                                /* .headerTop {
-                                    display: flex;
-                                    justify-content: space-between;
-                                    padding: 22px;
-                                    padding-left: 20px;
-                                    background-color: #fff;
-                                }
-                                .header {
-                                    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner_sm.svg");
-                                  
-                                    background-repeat: no-repeat;
-                                    background-size: 100%;
-                                    background-position: center;
-                                    height: 700px;
-                                } */
-                                .lists {
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    width: 100%;
-                                    max-width: 955px;
-                                    text-align: center;
-                                    margin: 50px auto;
-                                }
-                                .item {
-                                    width: 45%;
-                                    background: #FFFFFF 0% 0% no-repeat padding-box;
-                                    border: 1px solid #56C4C5;
-                                    border-radius: 27px;
-                                    opacity: 1;
-                                    margin: 15px auto;
-                                    text-align: center;
-                                    font: normal normal normal 18px/26px Comfortaa;
-                                    letter-spacing: 0px;
-                                    color: #56C4C5;
-                                    padding: 5px 7px;
-                                }
-                                .wrap {
-                                    max-width: 1200px;
-                                    margin: 0 auto;
-                                    padding: 5% 10%;
-                                }
-                                .container {
-                                    padding: 0 0;
-                                }
-                                .Citem {
-                                    width: 95%;
-                                    margin: auto;
-                                }
-                                .box {
-                                    display: flex;
-                                    justify-content: center;
-                                    margin: 50px auto;
-                                }
-                                .item2 {
-                                    background: #FFFFFF 0% 0% no-repeat padding-box;
-                                    box-shadow: 0px 2px 10px #00000014;
-                                    border-radius: 12px;
-                                    opacity: 1;
-                                    margin: 25px 0px;
-                                }
-                                .mt {
-                                    padding-bottom: 20px;
-                                }
-                                .divA {
-                                    margin: 3px 3px;
-                                }
-                                .divA h2 {
-                                    padding-top: 15px;
-                                }
-                                .divA p {
-                                    padding-bottom: 15px;
-                                }
-                                .btn {
-                                    margin: 20px auto;
-                                }
-                                .change {
-                                    background: #56C4C5 0% 0% no-repeat padding-box;
-                                    border: 1px solid #56C4C5;
-                                    color: #FFFFFF;
-                                    border-radius: 27px;
-                                    opacity: 1;
-                                }
-                            }
-                            
-                            .wrapH2 {
-                                margin: 25px auto;
-                                font: normal normal bold 32px/46px Noto Sans TC;
-                                letter-spacing: 0px;
-                                color: #221E1F;
-                            }
-                            
-                            .Qlist {
-                                display: flex;
-                                justify-content: space-between;
-                                background: #FFFFFF 0% 0% no-repeat padding-box;
-                                box-shadow: 0px 2px 10px #00000014;
-                                border-radius: 12px;
-                                padding-left: 1em;
-                                padding: 15px 25px;
-                            }
-                            
-                            .Qlist h3 {
-                                font: normal normal normal 18px/28px Noto Sans TC;
-                                letter-spacing: 0px;
-                                color: #221E1F;
-                            }
-                            
-                            .Qlist span {
-                                width: 30px;
-                                height: 30px;
-                                color: #56C4C5;
-                                text-align: center;
-                                font-weight: 900;
-                                font-size: 30px;
-                                line-height: 30px;
-                            }
-                            
-                            .as p {
-                                font: normal normal normal 16px/32px Noto Sans TC;
-                                letter-spacing: 0px;
-                                color: #747474;
-                                padding-left: 1em;
-                                padding: 0px 25px;
-                            }
-                            
-                            div .show h3 {
-                                color: #56C4C5;
-                            }
-                            
-                            footer,
-                            footer p {
-                                font: normal normal normal 16px/24px Noto Sans TC;
-                                letter-spacing: 0px;
-                                color: #221E1F;
-                                text-align: center;
-                                background-color: #fff;
-                                background: #F5F5F5 0% 0% no-repeat padding-box;
-                                height: 56px;
-                                line-height: 56px;
-                            }
-                            
-                            .top {
-                                top: 80vh;
-                            }
-                            
-                            @media (max-width: 375px) {
-                                .wrap {
-                                    background: none;
-                                }
-                                .bg1 {
-                                    display: none;
-                                }
-                                .bg2 {
-                                    width: 70%;
-                                    position: absolute;
-                                    top: 300px;
-                                    right: 25vh;
-                                    z-index: 1;
-                                }
-                                .bg3 {
-                                    width: 80%;
-                                    display: block;
-                                    z-index: -1;
-                                    margin-left: 10px;
-                                    margin-top: 130px;
-                                }
-                                .headerTop {
-                                    display: flex;
-                                    justify-content: space-between;
-                                    padding: 22px;
-                                    padding-left: 20px;
-                                    background-color: #fff;
-                                }
-                                .logo {
-                                    /* width: 173px; */
-                                    height: 24px;
-                                    display: inline-block;
-                                    margin-top: 15px;
-                                }
-                                .logoA {
-                                    display: inline-block;
-                                }
-                                .headerButton {
-                                    width: 128px;
-                                    height: 40px;
-                                    margin-right: 0px;
-                                    margin-top: 10px;
-                                    display: inline-block;
-                                    color: #fff;
-                                    background-color: #FF5D50;
-                                    border-radius: 20px;
-                                    text-align: center;
-                                    font: normal normal normal 16px/40px Noto Sans TC;
-                                }
-                                .headerContent {
-                                    width: 100%;
-                                    margin-top: 10px;
-                                    padding-left: 20px;
-                                }
-                                .header {
-                                    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner_sm.svg");
-                                    /* width: 100%; */
-                                    background-repeat: no-repeat;
-                                    background-size: 100%;
-                                    background-position: 0 100px;
-                                    height: 700px;
-                                }
-                                .headerContent h2 {
-                                    text-align: left;
-                                    font: normal normal bold 32px/46px Noto Sans TC;
-                                    letter-spacing: 0px;
-                                    color: #221E1F;
-                                    opacity: 1;
-                                }
-                                .headerContent p {
-                                    text-align: left;
-                                    font: normal normal normal 16px/24px Noto Sans TC;
-                                    letter-spacing: 0px;
-                                    color: #221E1F;
-                                    opacity: 1;
-                                }
-                                .item {
-                                    width: 95%;
-                                }
-                                .change {
-                                    background: #56C4C5 0% 0% no-repeat padding-box;
-                                    border: 1px solid #56C4C5;
-                                    color: #FFFFFF;
-                                    border-radius: 27px;
-                                    opacity: 1;
-                                }
-                                .divA {
-                                    width: 45%;
-                                }
-                                .divA h2 {
-                                    padding-top: 15px;
-                                }
-                                .divA p {
-                                    padding-bottom: 15px;
-                                }
-                                .top {
-                                    top: 139vh;
-                                }
-                            }
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    outline: 1px solid black;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+body {
+    font-family: 'NotoSans TC', sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* index.css */
+
+.wrap {
+    width: 100%;
+    position: relative;
+    /* background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg"); */
+}
+
+.bg1 {
+    width: 60%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -2;
+    display: block;
+}
+
+.bg2 {
+    width: 35%;
+    position: absolute;
+    top: 80px;
+    right: 25vh;
+    z-index: 0;
+}
+
+.bg3 {
+    width: 100%;
+    margin-left: -30px;
+    margin-bottom: 50px;
+    display: none;
+}
+
+.header {
+    width: 100%;
+    /* height: 100vh; */
+    height: 470px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: skyblue; */
+    padding: 24px 40px 24px 142px;
+    margin-bottom: 92px;
+}
+
+.top {
+    width: 71px;
+    height: 71px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 71px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 700;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 800vh;
+    right: 20px;
+}
+
+.logo {
+    width: 173px;
+    height: 40px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.logoA {
+    display: inline-block;
+}
+
+.headerButton {
+    width: 128px;
+    height: 40px;
+    margin-right: 50px;
+    margin-top: 10px;
+    display: inline-block;
+    color: #fff;
+    background-color: #FF5D50;
+    border-radius: 25px;
+    text-align: center;
+    font: normal normal normal 16px/40px Noto Sans TC;
+}
+
+.headerContent {
+    width: 100%;
+    padding-left: 139px;
+}
+
+.headerContent h2 {
+    text-align: left;
+    font: normal normal bold 48px/70px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+    margin-bottom: 16px;
+}
+
+.headerContent p {
+    text-align: left;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 5% 10%; */
+}
+
+.Citem {
+    width: 570px;
+}
+
+.Citem>h2 {
+    margin: 10px auto 48px;
+}
+
+.container h2 {
+    text-align: center;
+    font: normal normal bold 32px/46px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+}
+
+.headerh2 {
+    text-align: center;
+    font: normal normal bold 32px/46px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+    margin-top: 11px 196px 48px 201px;
+}
+
+.lists {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.item {
+    width: 130px;
+    height: 50px;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    opacity: 1;
+    /* margin: 15px 10px; */
+    text-align: center;
+    font: normal normal normal 18px/50px Comfortaa;
+    letter-spacing: 0px;
+    color: #56C4C5;
+}
+
+.change {
+    background: #56C4C5 0% 0% no-repeat padding-box;
+    border: 1px solid #56C4C5;
+    color: #FFFFFF;
+    border-radius: 27px;
+    opacity: 1;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 25px;
+}
+
+.Citem {
+    width: 48.11%;
+    box-shadow: 0px 2px 10px #00000014;
+}
+
+.item2 img {
+    width: 20px;
+}
+
+.item2 p {
+    display: inline-block;
+}
+
+.Citem p {
+    text-align: center;
+}
+
+.Citem h2 {
+    text-align: center;
+    font: normal normal bold 24px/35px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+    border: 1px solid #DDDDDD;
+    padding: 15px 0;
+}
+
+.Citem .mt {
+    text-align: center;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+}
+
+.Citem .mb {
+    text-align: center;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+    margin-bottom: 32px;
+}
+
+.divA {
+    width: 169px;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    opacity: 1;
+    width: 43.1%;
+    margin: 50px 20px;
+    box-shadow: 0px 2px 10px #00000014;
+    padding: 24px auto;
+}
+
+.box .divA h2 {
+    width: 100%;
+    text-align: center;
+    font: normal normal normal 12px/17px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+    margin-bottom: 8px;
+}
+
+.box .divA p {
+    text-align: left;
+    font: normal normal normal 32px/35px Comfortaa;
+    letter-spacing: 0px;
+    color: #56C4C5;
+    opacity: 1;
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 32px;
+}
+
+.divA span {
+    text-align: left;
+}
+
+.icon {
+    font: normal normal normal 29px/42px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+    margin: auto 17px;
+}
+
+.Citem span {
+    text-align: left;
+    font: normal normal normal 29px/42px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+}
+
+.divA span {
+    text-align: center;
+    font: normal normal bold 12px/17px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #56C4C5;
+    opacity: 1;
+}
+
+.box {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 25px;
+}
+
+.item2 {
+    margin-bottom: 16px;
+}
+
+.item2 p {
+    font: normal normal normal 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+    margin-left: 16px;
+}
+
+.btn {
+    display: block;
+    width: 136px;
+    padding: 8px 0;
+    margin: 32px auto;
+    background: #56C4C5 0% 0% no-repeat padding-box;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal normal 18px/26px Comfortaa;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.m-lf20 {
+    margin: 0 20px;
+}
+
+.Qh2 {
+    width: 100%;
+    margin: 100px auto 48px;
+}
+
+@media(max-width:955px) {
+    .headerTop {
+        display: flex;
+        justify-content: space-between;
+        padding: 22px;
+        padding-left: 20px;
+        background-color: #fff;
+    }
+    .logo {
+        /* width: 173px; */
+        height: 24px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    .logoA {
+        display: inline-block;
+    }
+    .top {
+        top: 90vh;
+    }
+    .headerButton {
+        width: 128px;
+        height: 40px;
+        margin-right: 0px;
+        margin-top: 10px;
+        display: inline-block;
+        color: #fff;
+        background-color: #FF5D50;
+        border-radius: 20px;
+        text-align: center;
+        font: normal normal normal 16px/40px Noto Sans TC;
+    }
+    .lists {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 955px;
+        text-align: center;
+        margin: 50px auto;
+    }
+    .item {
+        width: 45%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #56C4C5;
+        border-radius: 27px;
+        opacity: 1;
+        margin: 15px auto;
+        text-align: center;
+        font: normal normal normal 18px/26px Comfortaa;
+        letter-spacing: 0px;
+        color: #56C4C5;
+        padding: 5px 7px;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 64px auto 100px;
+        padding: 0 0;
+    }
+    .Citem {
+        width: 570px;
+        margin: auto;
+    }
+    .box {
+        display: flex;
+        justify-content: center;
+        margin: 50px auto;
+    }
+    .item2 {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 2px 10px #00000014;
+        border-radius: 12px;
+        opacity: 1;
+        margin: 25px 0px;
+    }
+    .mt {
+        padding-bottom: 20px;
+    }
+    .divA {
+        margin: 3px 3px;
+    }
+    .divA h2 {
+        padding-top: 15px;
+    }
+    .divA p {
+        padding-bottom: 15px;
+    }
+    .btn {
+        margin: 20px auto;
+    }
+    .change {
+        background: #56C4C5 0% 0% no-repeat padding-box;
+        border: 1px solid #56C4C5;
+        color: #FFFFFF;
+        border-radius: 27px;
+        opacity: 1;
+    }
+}
+
+.wrapH2 {
+    margin: 25px auto;
+    font: normal normal bold 32px/46px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+}
+
+.Qlist {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding: 16px 32px 16px 0;
+}
+
+.Qlist h3 {
+    font: normal normal normal 18px/28px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+}
+
+.Qlist img {
+    width: 20px;
+    height: 20px;
+    color: #56C4C5;
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.as {
+    margin-bottom: 132px;
+}
+
+.as p {
+    font: normal normal normal 16px/32px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #747474;
+}
+
+div .show h3 {
+    color: #56C4C5;
+}
+
+footer p {
+    font: normal normal normal 16px/56px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    text-align: center;
+    background-color: #fff;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    margin: 16px auto;
+}
+
+.top {
+    top: 50vh;
+}
+
+@media (max-width: 375px) {
+    .wrap {
+        background: none;
+    }
+    .bg1 {
+        display: none;
+    }
+    .bg2 {
+        width: 70%;
+        position: absolute;
+        top: 300px;
+        right: 25vh;
+        z-index: 1;
+    }
+    .bg3 {
+        width: 80%;
+        display: block;
+        z-index: -1;
+        margin-left: 10px;
+        margin-top: 130px;
+    }
+    .headerTop {
+        display: flex;
+        justify-content: space-between;
+        padding: 22px;
+        padding-left: 20px;
+        background-color: #fff;
+    }
+    .logo {
+        /* width: 173px; */
+        height: 24px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    .logoA {
+        display: inline-block;
+    }
+    .headerButton {
+        width: 128px;
+        height: 40px;
+        margin-right: 0px;
+        margin-top: 10px;
+        display: inline-block;
+        color: #fff;
+        background-color: #FF5D50;
+        border-radius: 20px;
+        text-align: center;
+        font: normal normal normal 16px/40px Noto Sans TC;
+    }
+    .headerContent {
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+    .header {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner_sm.svg");
+        /* width: 100%; */
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0 100px;
+        height: 700px;
+    }
+    .headerContent h2 {
+        text-align: left;
+        font: normal normal bold 32px/46px Noto Sans TC;
+        letter-spacing: 0px;
+        color: #221E1F;
+        opacity: 1;
+    }
+    .headerContent p {
+        text-align: left;
+        font: normal normal normal 16px/24px Noto Sans TC;
+        letter-spacing: 0px;
+        color: #221E1F;
+        opacity: 1;
+    }
+    .lists {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .item {
+        width: 50%;
+        /* width: 90px; */
+        height: 40px;
+    }
+    .change {
+        background: #56C4C5 0% 0% no-repeat padding-box;
+        border: 1px solid #56C4C5;
+        color: #FFFFFF;
+        border-radius: 27px;
+        opacity: 1;
+    }
+    .divA {
+        width: 45%;
+    }
+    .divA h2 {
+        padding-top: 15px;
+    }
+    .divA p {
+        padding-bottom: 15px;
+    }
+    .top {
+        top: 105vh;
+    }
+}
