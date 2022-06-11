@@ -135,7 +135,7 @@ table {
 *::after,
 *::before {
     box-sizing: border-box;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     margin-block-start: 0;
     margin-block-end: 0;
 }
