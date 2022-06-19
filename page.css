@@ -273,7 +273,7 @@ img {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1088px;
     margin: 0 auto;
     /* padding: 5% 10%; */
 }
@@ -347,7 +347,7 @@ a {
 .container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1088px;
     width: 100%;
     margin: 0 auto;
     gap: 25px;
@@ -573,7 +573,7 @@ a {
         padding: 5px 7px;
     }
     .container {
-        max-width: 1200px;
+        max-width: 1088px;
         margin: 64px auto 100px;
         padding: 0 0;
     }
