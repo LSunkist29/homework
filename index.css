@@ -1,9 +1,9 @@
-.wrap {
+.backgroundwrap {
     width: 100%;
     position: relative;
 }
 
-.bg1 {
+.background1 {
     display: block;
     width: 60%;
     position: absolute;
@@ -12,7 +12,7 @@
     z-index: -2;
 }
 
-.bg2 {
+.background2 {
     width: 35%;
     position: absolute;
     top: 80px;
@@ -20,14 +20,14 @@
     z-index: 0;
 }
 
-.bg3 {
+.background3 {
     display: none;
     width: 100%;
     margin-left: -30px;
     margin-bottom: 50px;
 }
 
-.top {
+.imgtop {
     width: 71px;
     height: 71px;
     font-size: 20px;
@@ -505,17 +505,17 @@
 }
 
 @media (max-width: 768px) {
-    .bg1 {
+    .background1 {
         display: block;
     }
-    .bg2 {
+    .background2 {
         width: 30%;
         position: absolute;
         top: 80px;
         right: 10vh;
         z-index: 1;
     }
-    .bg3 {
+    .background3 {
         margin-top: 30px;
     }
     .headerContent {
@@ -579,7 +579,7 @@
         padding-right: 16px;
         margin: 0 auto;
     }
-    .top {
+    .imgtop {
         top: 250px;
     }
     /* div3 */
@@ -698,17 +698,17 @@
     .wrap {
         background: none;
     }
-    .bg1 {
+    .background1 {
         display: none;
     }
-    .bg2 {
+    .background2 {
         width: 70%;
         position: absolute;
         top: 300px;
         right: 25vh;
         z-index: 1;
     }
-    .bg3 {
+    .background3 {
         display: block;
         width: 80%;
         margin-left: 10px;
@@ -776,21 +776,21 @@
         padding: 5px;
         margin: 5px;
     }
-    .top {
+    .imgtop {
         width: 50px;
         height: 50px;
         /* 定位的top */
         top: 620px;
         font: normal normal normal 14px/50px Wendy One;
     }
-    .bg2 {
+    .background2 {
         width: 304px;
         height: 305px;
         /* 定位的top right */
         top: 330px;
         right: 50px;
     }
-    .bg3 {
+    .background3 {
         right: 5px;
     }
     .card_item_1 {
