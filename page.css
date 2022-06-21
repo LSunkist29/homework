@@ -4,12 +4,12 @@
 }
 
 .bg1 {
+    display: block;
     width: 60%;
     position: absolute;
     top: 0px;
     right: 0px;
     z-index: -2;
-    display: block;
 }
 
 .bg2 {
@@ -21,10 +21,10 @@
 }
 
 .bg3 {
+    display: none;
     width: 100%;
     margin-left: -30px;
     margin-bottom: 50px;
-    display: none;
 }
 
 .header {
@@ -61,9 +61,9 @@
 }
 
 .logo {
+    display: inline-block;
     width: 173px;
     height: 40px;
-    display: inline-block;
     margin-top: 15px;
 }
 
@@ -72,15 +72,15 @@
 }
 
 .headerButton {
+    display: inline-block;
     width: 128px;
     height: 40px;
     margin-right: 50px;
     margin-top: 10px;
-    display: inline-block;
-    color: #fff;
     background-color: #FF5D50;
     border-radius: 25px;
     text-align: center;
+    color: #fff;
     font: normal normal normal 16px/40px Noto Sans TC;
 }
 
@@ -90,19 +90,19 @@
 }
 
 .headerContent h2 {
+    margin-bottom: 16px;
     text-align: left;
+    color: #221E1F;
     font: normal normal bold 48px/70px Noto Sans TC;
     letter-spacing: 0px;
-    color: #221E1F;
     opacity: 1;
-    margin-bottom: 16px;
 }
 
 .headerContent p {
     text-align: left;
+    color: #221E1F;
     font: normal normal normal 16px/24px Noto Sans TC;
     letter-spacing: 0px;
-    color: #221E1F;
     opacity: 1
 }
 
@@ -122,27 +122,27 @@
 
 .container h2 {
     text-align: center;
+    color: #221E1F;
     font: normal normal bold 32px/46px Noto Sans TC;
     letter-spacing: 0px;
-    color: #221E1F;
     opacity: 1;
 }
 
 .headerh2 {
+    margin-top: 11px 196px 48px 201px;
     text-align: center;
+    color: #221E1F;
     font: normal normal bold 32px/46px Noto Sans TC;
     letter-spacing: 0px;
-    color: #221E1F;
     opacity: 1;
-    margin-top: 11px 196px 48px 201px;
 }
 
 .lists {
     display: flex;
-    gap: 16px;
     justify-content: center;
-    text-align: center;
+    gap: 16px;
     margin: 50px auto;
+    text-align: center;
 }
 
 a {
@@ -154,12 +154,12 @@ a {
     height: 50px;
     border: 1px solid #56C4C5;
     border-radius: 27px;
-    opacity: 1;
     /* margin: 15px 10px; */
     text-align: center;
+    color: #56C4C5;
     font: normal normal normal 18px/50px Comfortaa;
     letter-spacing: 0px;
-    color: #56C4C5;
+    opacity: 1;
 }
 
 .itemcolor {
@@ -169,8 +169,8 @@ a {
 .change {
     background: #56C4C5 0% 0% no-repeat padding-box;
     border: 1px solid #56C4C5;
-    color: #FFFFFF;
     border-radius: 27px;
+    color: #FFFFFF;
     opacity: 1;
 }
 
@@ -205,66 +205,65 @@ a {
 }
 
 .Citem h2 {
+    padding: 15px 0;
     text-align: center;
+    border: 1px solid #DDDDDD;
+    color: #221E1F;
     font: normal normal bold 24px/35px Noto Sans TC;
     letter-spacing: 0px;
-    color: #221E1F;
     opacity: 1;
-    border: 1px solid #DDDDDD;
-    padding: 15px 0;
 }
 
 .Citem .mt {
     text-align: center;
+    color: #221E1F;
     font: normal normal normal 16px/24px Noto Sans TC;
     letter-spacing: 0px;
-    color: #221E1F;
     opacity: 1;
 }
 
 .Citem .mb {
+    margin-bottom: 32px;
     text-align: center;
+    color: #221E1F;
     font: normal normal normal 16px/24px Noto Sans TC;
     letter-spacing: 0px;
-    color: #221E1F;
     opacity: 1;
-    margin-bottom: 32px;
 }
 
 .divA {
-    width: 169px;
-    height: 108px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* width: 169px; */
+    width: 43.1%;
+    height: 108px;
+    padding: 24px auto;
+    margin: 50px 20px;
     background: #F5F5F5 0% 0% no-repeat padding-box;
     border-radius: 12px;
-    opacity: 1;
-    width: 43.1%;
-    margin: 50px 20px;
     box-shadow: 0px 2px 10px #00000014;
-    padding: 24px auto;
+    opacity: 1;
 }
 
 .box .divA h2 {
     width: 100%;
+    margin-bottom: 8px;
     text-align: center;
+    color: #221E1F;
     font: normal normal normal 12px/17px Noto Sans TC;
     letter-spacing: 0px;
-    color: #221E1F;
     opacity: 1;
-    margin-bottom: 8px;
 }
 
 .box .divA p {
-    text-align: left;
-    font: normal normal normal 32px/35px Comfortaa;
-    letter-spacing: 0px;
-    color: #56C4C5;
-    opacity: 1;
-    text-align: center;
     padding-bottom: 15px;
     margin-bottom: 32px;
+    text-align: center;
+    color: #56C4C5;
+    font: normal normal normal 32px/35px Comfortaa;
+    letter-spacing: 0px;
+    opacity: 1;
 }
 
 .divA span {
@@ -272,33 +271,32 @@ a {
 }
 
 .icon {
+    margin: auto 17px;
+    color: #221E1F;
     font: normal normal normal 29px/42px Noto Sans TC;
     letter-spacing: 0px;
-    color: #221E1F;
     opacity: 1;
-    margin: auto 17px;
 }
 
 .Citem span {
     text-align: left;
+    color: #221E1F;
     font: normal normal normal 29px/42px Noto Sans TC;
     letter-spacing: 0px;
-    color: #221E1F;
     opacity: 1;
 }
 
 .divA span {
     text-align: center;
+    color: #56C4C5;
     font: normal normal bold 12px/17px Noto Sans TC;
     letter-spacing: 0px;
-    color: #56C4C5;
     opacity: 1;
 }
 
 .box {
     display: flex;
     width: 100%;
-    max-width: 1200px;
     margin-bottom: 25px;
 }
 
@@ -478,14 +476,9 @@ a {
     color: #221E1F;
 }
 
-.Qlist img {
+.Qlist a img {
     width: 20px;
     height: 20px;
-    color: #56C4C5;
-    text-align: center;
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 30px;
 }
 
 .as {
