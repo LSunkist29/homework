@@ -305,11 +305,11 @@ a {
 }
 
 .item2 p {
+    margin-left: 16px;
+    color: #221E1F;
     font: normal normal normal 16px/24px Noto Sans TC;
     letter-spacing: 0px;
-    color: #221E1F;
     opacity: 1;
-    margin-left: 16px;
 }
 
 .btn {
@@ -320,11 +320,11 @@ a {
     background: #56C4C5 0% 0% no-repeat padding-box;
     border: 1px solid #56C4C5;
     border-radius: 27px;
-    opacity: 1;
     text-align: center;
+    color: #FFFFFF;
     font: normal normal normal 18px/26px Comfortaa;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    opacity: 1;
 }
 
 .m-lf20 {
@@ -345,9 +345,9 @@ a {
         background-color: #fff;
     }
     .logo {
+        display: inline-block;
         /* width: 173px; */
         height: 24px;
-        display: inline-block;
         margin-top: 15px;
     }
     .logoA {
@@ -357,15 +357,15 @@ a {
         top: 90vh;
     }
     .headerButton {
+        display: inline-block;
         width: 128px;
         height: 40px;
         margin-right: 0px;
         margin-top: 10px;
-        display: inline-block;
-        color: #fff;
         background-color: #FF5D50;
         border-radius: 20px;
         text-align: center;
+        color: #fff;
         font: normal normal normal 16px/40px Noto Sans TC;
     }
     .lists {
@@ -373,8 +373,8 @@ a {
         flex-wrap: wrap;
         width: 100%;
         max-width: 955px;
-        text-align: center;
         margin: 50px auto;
+        text-align: center;
     }
     .link {
         color: #56C4C5;
@@ -393,16 +393,16 @@ a {
     }
     .item {
         width: 45%;
+        padding: 5px 7px;
+        margin: 15px auto;
         background: #FFFFFF 0% 0% no-repeat padding-box;
         border: 1px solid #56C4C5;
         border-radius: 27px;
-        opacity: 1;
-        margin: 15px auto;
         text-align: center;
+        color: #56C4C5;
         font: normal normal normal 18px/26px Comfortaa;
         letter-spacing: 0px;
-        color: #56C4C5;
-        padding: 5px 7px;
+        opacity: 1;
     }
     .container {
         max-width: 1088px;
@@ -419,11 +419,11 @@ a {
         margin: 50px auto;
     }
     .item2 {
+        margin: 25px 0px;
         background: #FFFFFF 0% 0% no-repeat padding-box;
         box-shadow: 0px 2px 10px #00000014;
         border-radius: 12px;
         opacity: 1;
-        margin: 25px 0px;
     }
     .mt {
         padding-bottom: 20px;
@@ -443,8 +443,8 @@ a {
     .change {
         background: #56C4C5 0% 0% no-repeat padding-box;
         border: 1px solid #56C4C5;
-        color: #FFFFFF;
         border-radius: 27px;
+        color: #FFFFFF;
         opacity: 1;
     }
     .change .link {
@@ -454,9 +454,9 @@ a {
 
 .wrapH2 {
     margin: 25px auto;
+    color: #221E1F;
     font: normal normal bold 32px/46px Noto Sans TC;
     letter-spacing: 0px;
-    color: #221E1F;
 }
 
 .Qlist {
@@ -464,16 +464,16 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 16px 32px 16px 0;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 10px #00000014;
     border-radius: 12px;
-    padding: 16px 32px 16px 0;
 }
 
 .Qlist h3 {
+    color: #221E1F;
     font: normal normal normal 18px/28px Noto Sans TC;
     letter-spacing: 0px;
-    color: #221E1F;
 }
 
 .Qlist a img {
@@ -486,9 +486,9 @@ a {
 }
 
 .as p {
+    color: #747474;
     font: normal normal normal 16px/32px Noto Sans TC;
     letter-spacing: 0px;
-    color: #747474;
 }
 
 div .show h3 {
@@ -496,13 +496,13 @@ div .show h3 {
 }
 
 footer p {
-    font: normal normal normal 16px/56px Noto Sans TC;
-    letter-spacing: 0px;
-    color: #221E1F;
+    margin: 16px auto;
     text-align: center;
     background-color: #fff;
     background: #F5F5F5 0% 0% no-repeat padding-box;
-    margin: 16px auto;
+    color: #221E1F;
+    font: normal normal normal 16px/56px Noto Sans TC;
+    letter-spacing: 0px;
 }
 
 .top {
@@ -524,11 +524,11 @@ footer p {
         z-index: 1;
     }
     .bg3 {
-        width: 80%;
         display: block;
-        z-index: -1;
+        width: 80%;
         margin-left: 10px;
         margin-top: 130px;
+        z-index: -1;
     }
     .headerTop {
         display: flex;
@@ -539,50 +539,50 @@ footer p {
     }
     .logo {
         /* width: 173px; */
-        height: 24px;
         display: inline-block;
+        height: 24px;
         margin-top: 15px;
     }
     .logoA {
         display: inline-block;
     }
     .headerButton {
+        display: inline-block;
         width: 128px;
         height: 40px;
         margin-right: 0px;
         margin-top: 10px;
-        display: inline-block;
-        color: #fff;
         background-color: #FF5D50;
         border-radius: 20px;
         text-align: center;
+        color: #fff;
         font: normal normal normal 16px/40px Noto Sans TC;
     }
     .headerContent {
         width: 100%;
-        margin-top: 10px;
         padding-left: 20px;
+        margin-top: 10px;
     }
     .header {
+        height: 700px;
         background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner_sm.svg");
         /* width: 100%; */
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: 0 100px;
-        height: 700px;
     }
     .headerContent h2 {
         text-align: left;
+        color: #221E1F;
         font: normal normal bold 32px/46px Noto Sans TC;
         letter-spacing: 0px;
-        color: #221E1F;
         opacity: 1;
     }
     .headerContent p {
         text-align: left;
+        color: #221E1F;
         font: normal normal normal 16px/24px Noto Sans TC;
         letter-spacing: 0px;
-        color: #221E1F;
         opacity: 1;
     }
     .lists {
@@ -612,8 +612,8 @@ footer p {
     .change {
         background: #56C4C5 0% 0% no-repeat padding-box;
         border: 1px solid #56C4C5;
-        color: #FFFFFF;
         border-radius: 27px;
+        color: #FFFFFF;
         opacity: 1;
     }
     .change .link {
