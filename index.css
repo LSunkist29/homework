@@ -1,5 +1,4 @@
 .backgroundwrap {
-    width: 100%;
     position: relative;
 }
 
@@ -46,7 +45,7 @@
 }
 
 .header {
-    max-width: 1088px;
+    margin: 100%;
     height: 100vh;
     margin: 0 auto;
 }
@@ -83,13 +82,17 @@
     font: normal normal normal 16px/40px Noto Sans TC;
 }
 
+.headerButton:hover {
+    background-color: #ab3e36;
+}
+
 .headerContent {
     max-width: 1088px;
     margin-top: 120px;
     padding-left: 60px;
 }
 
-.h2_1 {
+.textTitle {
     display: block;
     width: 100%;
     padding-bottom: 8px;
@@ -98,14 +101,14 @@
     font: normal normal bold 18px/26px Noto Sans TC;
 }
 
-.h2_2 {
+.textContent {
     display: block;
     width: 100%;
     color: #221E1F;
     font: normal normal bold 48px/70px Noto Sans TC;
 }
 
-.h2_3 {
+.textIntroduction {
     display: block;
     width: 100%;
     margin-top: 16px;
@@ -130,7 +133,7 @@
 
 .content_1 h2 {
     color: #221E1F;
-    margin-bottom: 42px;
+    margin-bottom: 48px;
     font: normal normal bold 32px/46px Noto Sans TC;
 }
 
@@ -284,27 +287,28 @@
     font: normal normal normal 16px/24px Noto Sans TC;
 }
 
-.rightcentent {
+.rightcontent {
     width: 50%;
     text-align: left;
-    padding-left: 50px;
+    padding-left: 137px;
     padding-top: 120px;
 }
 
-.rightcentent h2 {
+.rightcontent h2 {
     margin-bottom: 25px;
+    padding-right: 139px;
     color: #221E1F;
     font: normal normal bold 32px/46px Noto Sans TC;
 }
 
-.rightcentent p {
+.rightcontent p {
     width: 100%;
     margin-bottom: 25px;
     color: #221E1F;
     font: normal normal normal 18px/26px Noto Sans TC;
 }
 
-.rightcentent a {
+.rightcontent a {
     width: 136px;
     height: 49px;
     padding: 5px;
@@ -315,6 +319,10 @@
     text-align: center;
     color: #FFFFFF;
     font: normal normal normal 18px/39px Comfortaa;
+}
+
+.rightcontent a:hover {
+    background-color: #408f91;
 }
 
 
@@ -436,6 +444,7 @@
 /* div5 */
 
 .footer {
+    width: 100%;
     background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -467,6 +476,10 @@
     font: normal normal normal 18px/49px Comfortaa;
     letter-spacing: 0px;
     opacity: 1;
+}
+
+.footer a:hover {
+    background-color: #408f91;
 }
 
 .footer p {
@@ -523,17 +536,17 @@
         margin-top: 100px;
         padding-left: 10px;
     }
-    .h2_1 {
+    .textTitle {
         margin-bottom: 15px;
         text-align: left;
         color: #56C4C5;
         font: normal normal bold 13px/21px Noto Sans TC;
     }
-    .h2_2 {
+    .textContent {
         color: #221E1F;
         font: normal normal bold 29px/43px Noto Sans TC;
     }
-    .h2_3 {
+    .textIntroduction {
         margin-top: 15px;
         color: #221E1F;
         font: normal normal normal 13px/21px Noto Sans TC;
@@ -544,15 +557,15 @@
     .header {
         height: auto;
     }
-    .h2_1 {
+    .textTitle {
         width: 100%;
         padding: 5px;
     }
-    .h2_2 {
+    .textContent {
         width: 100%;
         padding: 5px;
     }
-    .h2_3 {
+    .textIntroduction {
         width: 100%;
         padding: 5px;
     }
@@ -572,9 +585,10 @@
     }
     .content_3 {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column-reverse;
         justify-content: space-between;
-        max-width: 768px;
+        width: 100%;
         padding-left: 16px;
         padding-right: 16px;
         margin: 0 auto;
@@ -583,7 +597,7 @@
         top: 250px;
     }
     /* div3 */
-    .leftcentent {
+    .leftcontent {
         width: 100%;
         /* text-align: left;
         -webkit-box-ordinal-group: 2;
@@ -591,13 +605,14 @@
         -ms-flex-order: 2;
         -webkit-order: 2;
         order: 2; */
-        padding-right: 15%;
+        /* padding-right: 15%; */
     }
     .card_3 {
         display: flex;
         flex-wrap: wrap;
+        width: 80%;
         gap: 10px;
-        margin-right: 16%;
+        /* margin-right: 16%; */
     }
     .card_item_3 {
         width: 48%;
@@ -627,7 +642,7 @@
         color: #221E1F;
         font: normal normal normal 16px/24px Noto Sans TC;
     }
-    .rightcentent {
+    .rightcontent {
         width: 100%;
         padding-right: 60px;
         padding-top: 120px;
@@ -642,27 +657,43 @@
     .card_3 {
         display: flex;
         flex-wrap: wrap;
-        padding-left: 50px;
         margin: 0 auto;
     }
-    .rightcentent h2 {
+    .card_item_3 {
+        width: 230px;
+        padding-left: 25px;
+        padding-bottom: 100px;
+    }
+    .card_item_3 .item_img,
+    .card_item_3 h2,
+    .card_item_3 p {
+        margin-bottom: 20px;
+    }
+    .rightcontent {
+        padding: 80px 35% 0px;
+        text-align: left;
+    }
+    .rightcontent .text {
+        width: 100%;
+        padding-right: 0px;
         margin-bottom: 25px;
+        margin: auto 0;
         color: #221E1F;
         font: normal normal bold 20px/46px Noto Sans TC;
     }
-    .rightcentent p {
+    .rightcontent p {
         width: 100%;
         margin-bottom: 25px;
         color: #221E1F;
         font: normal normal normal 10px/26px Noto Sans TC;
     }
-    .rightcentent a {
+    .rightcontent a {
         display: block;
         width: 136px;
         height: 49px;
         padding: 5px;
-        margin: 15px auto;
-        margin-left: 35%;
+        margin: 55px auto;
+        margin-left: 5px;
         border-radius: 25px;
         background-color: #56C4C5;
         text-align: center;
@@ -744,17 +775,17 @@
         width: 100%;
         margin-top: 10px;
     }
-    .h2_1 {
+    .textTitle {
         margin-bottom: 15px;
         text-align: left;
         color: #56C4C5;
         font: normal normal bold 16px/24px Noto Sans TC;
     }
-    .h2_2 {
+    .textContent {
         color: #221E1F;
         font: normal normal bold 32px/46px Noto Sans TC;
     }
-    .h2_3 {
+    .textIntroduction {
         margin-top: 15px;
         color: #221E1F;
         font: normal normal normal 16px/24px Noto Sans TC;
@@ -763,15 +794,15 @@
         height: auto;
         margin-bottom: 32px;
     }
-    .h2_1 {
+    .textTitle {
         width: 100%;
         margin-bottom: 8px;
     }
-    .h2_2 {
+    .textContent {
         width: 100%;
         margin-bottom: 16px;
     }
-    .h2_3 {
+    .textIntroduction {
         width: 100%;
         padding: 5px;
         margin: 5px;
@@ -802,26 +833,53 @@
         padding: 20px;
     }
     .card_item_2 {
-        width: 100%;
+        width: 260px;
     }
-    .rightcentent a {
+    .rightcontent {
+        padding: 0;
+        text-align: center;
+    }
+    .rightcontent .text {
+        font: normal normal bold 28px/40px Noto Sans TC;
+        letter-spacing: 0px;
+        color: #221E1F;
+        opacity: 1;
+    }
+    .rightcontent a {
         margin: 15px auto;
     }
-    .card_3 {
-        padding: 25px;
+    .content_3 {
+        margin-bottom: 60px;
+        margin: 0 auto;
     }
-    .card_item_3 {
+    .card_3 {
+        /* padding: 25px; */
         width: 100%;
         margin: 0 auto;
+    }
+    .card_item_3 {
+        width: 230px;
+        height: 284px;
+        margin: 0 auto;
+        padding-top: 32px;
+        padding-left: 24px;
+        padding-bottom: 41px;
         margin-bottom: 15px;
         border-radius: 10px;
         box-shadow: 1px 2px 9px 2px #bbb8b8;
     }
-    .card_item_3 h2 {
+    .item_img {
+        width: 86px;
+    }
+    .card_item_3 .txt {
         margin-bottom: 30px;
     }
+    .card_item_3 h2 {
+        margin-bottom: 20px;
+        font: normal normal bold 18px/26px Noto Sans TC;
+    }
     .card_item_3 p {
-        margin-bottom: 60px;
+        margin-bottom: 48px;
     }
     .item_img {
         width: 62px;
@@ -831,12 +889,15 @@
         border-radius: 80px;
         box-shadow: 1px 2px 9px 2px #bbb8b8;
     }
-    .rightcentent h2 {
-        margin-bottom: 25px;
+    .rightcontent {
+        margin-bottom: 44px;
+    }
+    .rightcontent .text {
         color: #221E1F;
         font: normal normal bold 18px/26px Noto Sans TC;
+        margin-bottom: 16px;
     }
-    .rightcentent p {
+    .rightcontent p {
         width: 100%;
         margin-bottom: 25px;
         color: #221E1F;
@@ -844,26 +905,34 @@
     }
     /* div4 */
     .card_4 {
-        padding: 20px;
+        /* padding: 20px; */
     }
     .card_item_4 {
-        width: 100%;
+        max-width: 335px;
+        height: 248px;
+        padding: 0 16px;
+        margin-top: 50px;
     }
     .card_item_4 img {
-        top: -50px;
+        top: -70px;
     }
     .card_item_4 p {
         margin-top: 48px;
         margin-bottom: 32px;
+        font: normal normal normal 16px/24px Noto Sans TC;
     }
     .card_item_4 h3 {
         margin-bottom: 8px;
+        font: normal normal bold 16px/24px Noto Sans TC;
+    }
+    .divL {
+        margin: 0;
+        padding: 0;
     }
     .list {
         margin-top: 24px;
     }
     .footer {
-        width: 100%;
         padding-top: 250px;
         text-align: center;
         background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg");

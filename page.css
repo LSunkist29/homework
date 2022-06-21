@@ -32,7 +32,7 @@
     height: 470px;
     background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: center;
 }
 
 .headerTop {
@@ -232,12 +232,8 @@ a {
 }
 
 .divA {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     /* width: 169px; */
     width: 43.1%;
-    height: 108px;
     padding: 24px auto;
     margin: 50px 20px;
     background: #F5F5F5 0% 0% no-repeat padding-box;
@@ -258,7 +254,6 @@ a {
 
 .box .divA p {
     padding-bottom: 15px;
-    margin-bottom: 32px;
     text-align: center;
     color: #56C4C5;
     font: normal normal normal 32px/35px Comfortaa;
@@ -509,6 +504,16 @@ footer p {
     top: 50vh;
 }
 
+@media(max-width:765px) {
+    .header {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner_sm.svg");
+        /* width: 100%; */
+        background-repeat: no-repeat;
+        background-size: 100%;
+        /* background-position: 0 100px; */
+    }
+}
+
 @media (max-width: 375px) {
     .wrap {
         background: none;
@@ -564,12 +569,11 @@ footer p {
         margin-top: 10px;
     }
     .header {
-        height: 700px;
         background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner_sm.svg");
         /* width: 100%; */
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position: 0 100px;
+        /* background-position: 0 100px; */
     }
     .headerContent h2 {
         text-align: left;
