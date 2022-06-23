@@ -715,7 +715,7 @@
         margin: 0 auto;
     }
     .wordPraisecard .card_item {
-        width: 100%;
+        width: 80%;
         margin: 25px auto;
         margin-bottom: 25px;
     }
@@ -836,7 +836,7 @@
         right: 5px;
     }
     .textIntroduction .card_item {
-        width: 100%;
+        width: 80%;
         padding: 0px;
         margin: 30px;
     }
