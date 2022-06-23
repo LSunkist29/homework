@@ -160,7 +160,7 @@
     font: normal normal bold 24px/35px Noto Sans TC;
 }
 
-.wordhandleitncard .card_item p {
+.wordhandleitcard .card_item p {
     letter-spacing: 0px;
     margin-bottom: 24px;
     color: #747474;
@@ -580,8 +580,11 @@
         margin: 0 auto;
     }
     .wordanyonecard .card_item {
-        width: 45%;
-        margin-bottom: 15px;
+        width: 100%;
+    }
+    .wordhandleitcard .card_item {
+        width: 100%;
+        padding: 20px;
     }
     .wordFunction {
         display: flex;
@@ -829,7 +832,8 @@
         padding: 0px;
         margin: 30px;
     }
-    .wordanyonecard {
+    .wordhandleitcard .card_item {
+        width: 100%;
         padding: 20px;
     }
     .wordanyonecard .card_item {
@@ -852,7 +856,7 @@
         margin-bottom: 60px;
         margin: 0 auto;
     }
-    .wordFunctioncard {
+    .wordFunctioncard .card_item {
         /* padding: 25px; */
         width: 100%;
         margin: 0 auto;
