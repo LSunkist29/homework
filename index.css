@@ -579,8 +579,12 @@
         flex-wrap: wrap;
         margin: 0 auto;
     }
+    .wordanyone p {
+        margin-bottom: 32px;
+    }
     .wordanyonecard .card_item {
-        width: 100%;
+        width: 80%;
+        /* margin: 0 auto; */
     }
     .wordhandleitcard .card_item {
         width: 100%;
@@ -619,6 +623,7 @@
     }
     .wordFunctioncard .card_item {
         width: 48%;
+        margin: 0 auto;
         margin-bottom: 15px;
         border-radius: 10px;
         box-shadow: 1px 2px 9px 2px #bbb8b8;
@@ -648,7 +653,7 @@
     .rightcontent {
         width: 100%;
         padding-right: 60px;
-        padding-top: 120px;
+        margin-top: 120px;
         margin-bottom: 50px;
         text-align: center;
         -webkit-box-ordinal-group: 1;
@@ -838,6 +843,9 @@
     }
     .wordanyonecard .card_item {
         width: 260px;
+    }
+    .wordanyone p {
+        margin-bottom: 32px;
     }
     .rightcontent {
         padding: 0;
