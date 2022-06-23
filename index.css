@@ -2,7 +2,7 @@
     position: relative;
 }
 
-.background1 {
+.bigyellowbackground {
     display: block;
     width: 60%;
     position: absolute;
@@ -11,7 +11,7 @@
     z-index: -2;
 }
 
-.background2 {
+.colorbackground {
     width: 35%;
     position: absolute;
     top: 80px;
@@ -19,7 +19,7 @@
     z-index: 0;
 }
 
-.background3 {
+.smallyellowbackground {
     display: none;
     width: 100%;
     margin-left: -30px;
@@ -124,43 +124,43 @@
     margin: 0 auto;
 }
 
-.content_1 {
+.wordhandleit {
     width: 100%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 100px;
 }
 
-.content_1 h2 {
+.wordhandleit h2 {
     color: #221E1F;
     margin-bottom: 48px;
     font: normal normal bold 32px/46px Noto Sans TC;
 }
 
-.card_1 {
+.wordhandleitcard {
     display: flex;
     flex-wrap: wrap;
 }
 
-.card_item_1 {
+.wordhandleitcard .card_item {
     width: 25%;
     margin: 0 auto;
     padding-bottom: 50px;
 }
 
-.card_item_1 img {
+.wordhandleitcard .card_item img {
     width: 90px;
     margin-bottom: 24px;
 }
 
-.card_item_1 h2 {
+.wordhandleitcard .card_item h2 {
     letter-spacing: 0px;
     padding-bottom: 10px;
     color: #221E1F;
     font: normal normal bold 24px/35px Noto Sans TC;
 }
 
-.card_item_1 p {
+.wordhandleitncard .card_item p {
     letter-spacing: 0px;
     margin-bottom: 24px;
     color: #747474;
@@ -170,14 +170,14 @@
 
 /* div2 */
 
-.content_2 {
+.wordanyone {
     /* max-width: 1088px; */
     width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
-.content_2 h2 {
+.wordanyone h2 {
     margin-bottom: 16px;
     letter-spacing: 0px;
     opacity: 1;
@@ -185,14 +185,14 @@
     font: normal normal bold 32px/46px Noto Sans TC;
 }
 
-.content_2 p {
+.wordanyone p {
     color: #221E1F;
     font: normal normal normal 20px/29px Noto Sans TC;
     letter-spacing: 0px;
     opacity: 1;
 }
 
-.card_2 {
+.wordanyonecard {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -202,17 +202,17 @@
     margin: 48px auto 100px;
 }
 
-.card_item_2 {
+.wordanyonecard .card_item {
     width: 23%;
     border-radius: 12px 12px 0px 0px;
     box-shadow: 1px 2px 9px 2px #bbb8b8;
 }
 
-.card_item_2 img {
+.wordanyonecard .card_item img {
     max-width: 100%;
 }
 
-.card_item_2 h2 {
+.wordanyonecard .card_item h2 {
     margin: 16px auto;
     color: #56C4C5;
     font: normal normal bold 16px/24px Noto Sans TC;
@@ -220,7 +220,7 @@
     opacity: 1;
 }
 
-.card_item_2 p {
+.wordanyonecard .card_item p {
     padding: 0 16px 24px;
     font: normal normal normal 16px/24px Noto Sans TC;
     letter-spacing: 0px;
@@ -228,7 +228,7 @@
     opacity: 1;
 }
 
-.content_3 {
+.wordFunction {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -244,7 +244,7 @@
     margin: 0 auto;
 }
 
-.card_3 {
+.wordFunctioncard {
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
@@ -252,7 +252,7 @@
     margin: 0 auto;
 }
 
-.card_item_3 {
+.wordFunctioncard .card_item {
     /* width: 280px; */
     width: 46%;
     padding: 15px;
@@ -262,12 +262,12 @@
     margin-bottom: 5%;
 }
 
-.card_item_3 .item_img img {
+.wordFunctioncard .card_item .item_img img {
     width: 100%;
     height: 100%;
 }
 
-.item_img {
+.wordFunctioncard .item_img {
     width: 62px;
     padding: 10px;
     margin-bottom: 41px;
@@ -275,13 +275,13 @@
     box-shadow: 1px 2px 9px 2px #bbb8b8;
 }
 
-.card_item_3 h2 {
+.wordFunctioncard .card_item h2 {
     margin-bottom: 16px;
     color: #221E1F;
     font: normal normal bold 18px/26px Noto Sans TC;
 }
 
-.card_item_3 p {
+.wordFunctioncard .card_item p {
     margin-bottom: 30px;
     color: #221E1F;
     font: normal normal normal 16px/24px Noto Sans TC;
@@ -328,12 +328,12 @@
 
 /* div4 */
 
-.content_4 {
+.wordPraise {
     margin: 100px auto 50px;
     text-align: center;
 }
 
-.content_4 h2 {
+.wordPraise h2 {
     margin-bottom: 48px;
     text-align: center;
     color: #221E1F;
@@ -342,7 +342,7 @@
     opacity: 1;
 }
 
-.card_4 {
+.wordPraisecard {
     /* width: 80%; */
     width: 100%;
     display: flex;
@@ -352,7 +352,7 @@
     margin: 0 auto 34px;
 }
 
-.card_item_4 {
+.wordPraisecard .card_item {
     width: 29%;
     /* width: 352px; */
     /* margin-left: 20px; */
@@ -365,7 +365,7 @@
     box-shadow: 1px 2px 9px 2px #bbb8b8;
 }
 
-.card_item_4>img {
+.wordPraisecard .card_item>img {
     width: 30%;
     height: auto;
     border-radius: 50%;
@@ -373,7 +373,7 @@
     top: -54px;
 }
 
-.card_item_4 p {
+.wordPraisecard .card_item p {
     margin: 48px 0;
     text-align: left;
     color: #221E1F;
@@ -382,11 +382,11 @@
     opacity: 1;
 }
 
-.card_item_4 .mb70 {
+.wordPraisecard .card_item .mb70 {
     margin-bottom: 70px;
 }
 
-.card_item_4 h3 {
+.wordPraisecard .card_item h3 {
     margin-bottom: 8px;
     text-align: left;
     color: #221E1F;
@@ -518,17 +518,17 @@
 }
 
 @media (max-width: 768px) {
-    .background1 {
+    .bigyellowbackground {
         display: block;
     }
-    .background2 {
+    .colorbackground {
         width: 30%;
         position: absolute;
         top: 80px;
         right: 10vh;
         z-index: 1;
     }
-    .background3 {
+    .smallyellowbackground {
         margin-top: 30px;
     }
     .headerContent {
@@ -551,7 +551,7 @@
         color: #221E1F;
         font: normal normal normal 13px/21px Noto Sans TC;
     }
-    .content_1 {
+    .wordhandleit {
         padding-top: 60px;
     }
     .header {
@@ -569,21 +569,21 @@
         width: 100%;
         padding: 5px;
     }
-    .card_item_1 {
+    .textIntroduction .card_item {
         width: 60%;
         padding-bottom: 50px;
         margin: 10px auto;
     }
-    .card_2 {
+    .wordanyonecard {
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
     }
-    .card_item_2 {
+    .wordanyonecard .card_item {
         width: 45%;
         margin-bottom: 15px;
     }
-    .content_3 {
+    .wordFunction {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column-reverse;
@@ -607,20 +607,20 @@
         order: 2; */
         /* padding-right: 15%; */
     }
-    .card_3 {
+    .wordFunctioncard {
         display: flex;
         flex-wrap: wrap;
         width: 80%;
         gap: 10px;
         /* margin-right: 16%; */
     }
-    .card_item_3 {
+    .wordFunctioncard .card_item {
         width: 48%;
         margin-bottom: 15px;
         border-radius: 10px;
         box-shadow: 1px 2px 9px 2px #bbb8b8;
     }
-    .card_item_3 .item_img img {
+    .wordFunctioncard .card_item .item_img img {
         width: 100%;
         height: 100%;
     }
@@ -632,12 +632,12 @@
         border-radius: 43px;
         box-shadow: 1px 2px 9px 2px #bbb8b8;
     }
-    .card_item_3 h2 {
+    .wordFunctioncard .card_item h2 {
         margin-bottom: 15px;
         color: #221E1F;
         font: normal normal bold 18px/26px Noto Sans TC;
     }
-    .card_item_3 p {
+    .wordFunctioncard .card_item p {
         margin-bottom: 30px;
         color: #221E1F;
         font: normal normal normal 16px/24px Noto Sans TC;
@@ -654,19 +654,19 @@
         -webkit-order: 1;
         order: 1;
     }
-    .card_3 {
+    .wordFunctioncard {
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
     }
-    .card_item_3 {
+    .wordFunctioncard .card_item {
         width: 230px;
         padding-left: 25px;
         padding-bottom: 100px;
     }
-    .card_item_3 .item_img,
-    .card_item_3 h2,
-    .card_item_3 p {
+    .wordFunctioncard .card_item .item_img,
+    .wordFunctioncard .card_item h2,
+    .wordFunctioncard .card_item p {
         margin-bottom: 20px;
     }
     .rightcontent {
@@ -701,12 +701,12 @@
         font: normal normal normal 18px/39px Comfortaa;
     }
     /* div4 */
-    .card_4 {
+    .wordPraisecard {
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
     }
-    .card_item_4 {
+    .wordPraisecard .card_item {
         width: 100%;
         margin: 25px auto;
         margin-bottom: 25px;
@@ -729,17 +729,17 @@
     .wrap {
         background: none;
     }
-    .background1 {
+    .bigyellowbackground {
         display: none;
     }
-    .background2 {
+    .colorbackground {
         width: 70%;
         position: absolute;
         top: 300px;
         right: 25vh;
         z-index: 1;
     }
-    .background3 {
+    .smallyellowbackground {
         display: block;
         width: 80%;
         margin-left: 10px;
@@ -814,25 +814,25 @@
         top: 620px;
         font: normal normal normal 14px/50px Wendy One;
     }
-    .background2 {
+    .colorbackground {
         width: 304px;
         height: 305px;
         /* 定位的top right */
         top: 330px;
         right: 50px;
     }
-    .background3 {
+    .smallyellowbackground {
         right: 5px;
     }
-    .card_item_1 {
+    .textIntroduction .card_item {
         width: 100%;
         padding: 0px;
         margin: 30px;
     }
-    .card_2 {
+    .wordanyonecard {
         padding: 20px;
     }
-    .card_item_2 {
+    .wordanyonecard .card_item {
         width: 260px;
     }
     .rightcontent {
@@ -848,16 +848,16 @@
     .rightcontent a {
         margin: 15px auto;
     }
-    .content_3 {
+    .wordFunction {
         margin-bottom: 60px;
         margin: 0 auto;
     }
-    .card_3 {
+    .wordFunctioncard {
         /* padding: 25px; */
         width: 100%;
         margin: 0 auto;
     }
-    .card_item_3 {
+    .wordFunctioncard .card_item {
         width: 230px;
         height: 284px;
         margin: 0 auto;
@@ -868,20 +868,20 @@
         border-radius: 10px;
         box-shadow: 1px 2px 9px 2px #bbb8b8;
     }
-    .item_img {
+    .wordFunctioncard .card_item .item_img {
         width: 86px;
     }
-    .card_item_3 .txt {
+    /* .txt {
         margin-bottom: 30px;
-    }
-    .card_item_3 h2 {
+    } */
+    .wordFunctioncard .card_item h2 {
         margin-bottom: 20px;
         font: normal normal bold 18px/26px Noto Sans TC;
     }
-    .card_item_3 p {
+    .wordFunctioncard .card_item p {
         margin-bottom: 48px;
     }
-    .item_img {
+    .card_itme .item_img {
         width: 62px;
         text-align: center;
         padding: 10px;
@@ -904,24 +904,24 @@
         font: normal normal normal 16px/24px Noto Sans TC;
     }
     /* div4 */
-    .card_4 {
+    .wordPraisecard {
         /* padding: 20px; */
     }
-    .card_item_4 {
+    .wordPraisecard .card_item {
         max-width: 335px;
         height: 248px;
         padding: 0 16px;
         margin-top: 50px;
     }
-    .card_item_4 img {
+    .wordPraisecard .card_item img {
         top: -70px;
     }
-    .card_item_4 p {
+    .wordPraisecard .card_item p {
         margin-top: 48px;
         margin-bottom: 32px;
         font: normal normal normal 16px/24px Noto Sans TC;
     }
-    .card_item_4 h3 {
+    .wordPraisecard .card_item h3 {
         margin-bottom: 8px;
         font: normal normal bold 16px/24px Noto Sans TC;
     }
