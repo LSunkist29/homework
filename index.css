@@ -583,7 +583,7 @@
         margin-bottom: 32px;
     }
     .wordanyonecard .card_item {
-        width: 80%;
+        width: 45%;
         /* margin: 0 auto; */
     }
     .wordhandleitcard .card_item {
@@ -718,6 +718,9 @@
         width: 100%;
         margin: 25px auto;
         margin-bottom: 25px;
+    }
+    .wordPraisecard .card_item>img {
+        width: 120px;
     }
     .footer h3 {
         margin: 0;
