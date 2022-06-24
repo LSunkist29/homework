@@ -953,7 +953,7 @@
     }
     .wordPraisecard .card_item {
         max-width: 335px;
-        height: 248px;
+        height: auto;
         padding: 0 16px;
         margin-top: 50px;
     }
